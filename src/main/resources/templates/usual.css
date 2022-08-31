@@ -1,0 +1,50 @@
+body {
+	background-color:#3a3d40;
+}
+h1 {
+	color:rgb(255, 255, 255);
+	text-align:center;
+}
+
+h2 {
+    font-size:20px;
+    /* *这是颜色的注释 */
+	color:red;
+	text-align:center;
+}
+p {
+    color:#cbcbcb;
+	font-family:宋体,PingFang SC,HarmonyOS_Medium,Helvetica Neue,Microsoft YaHei,sans-serif;
+	font-size:15px;
+}
+yuansu1 {
+    color:blue;
+    font-family: 宋体;
+    font-size:10px;
+}
+a {
+    color:aqua;
+    font-family:"YaHei";
+    font-size:10px;
+}
+a:link {
+    color:#00FF00;
+    font-family:"YaHei";
+    font-size:10px;
+}
+a:visited {
+    color:cornflowerblue;
+}
+a:hover {
+    color:green;
+}
+a::before {
+    content:"<";
+    color:rgb(255, 221, 0);
+    font-size:8px;
+}
+a::after {
+    content:">";
+    color:rgb(255, 221, 0);
+    font-size:8px;
+}
