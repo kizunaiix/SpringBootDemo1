@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HelloController {
+
+    @RequestMapping("")
+    public String home(){
+        return "homePage/index";
+    }
+
 //    @ResponseBody
     /**这个方法只会去templates文件夹里找html文件，文件名是这个方法返回的String*/
     @RequestMapping("/hello")
@@ -14,9 +20,9 @@ public class HelloController {
     }
 
 
-    @RequestMapping("/testing")
+    @RequestMapping("/test1")
     public String testing(){
-        return "testing";
+        return "test1";
     }
 
 
