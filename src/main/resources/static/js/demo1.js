@@ -1,4 +1,4 @@
-/**TODO : js开学！*/
+
 
 function popAlert1(){
     x=document.getElementById("AlertButton")        // 找到元素
