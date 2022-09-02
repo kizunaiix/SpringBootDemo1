@@ -46,15 +46,21 @@ a::after {
     font-size:8px;
 }
 
+button.aqua {
+    background-color:aqua;
+    height:30px;
+    width:80px;
+    font-size:12px;
+}
 
 /* 下面是一些class和id
 ------------------------------------------------------------------------------------------- */
 
-/* 这个类的图片点击能返回主页 */
-.home { 
-    /* onclick: 回到主页面（）*/
+/* 这个类的图片点击能返回主页 ，所以是个小logo */
+img.home { 
     width: 30px;
     height: 30px;
+
 }
 
 /* 居中 */
