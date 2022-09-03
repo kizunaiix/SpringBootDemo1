@@ -57,14 +57,14 @@ button.aqua {
 ------------------------------------------------------------------------------------------- */
 
 /* 这个类的图片点击能返回主页 ，所以是个小logo */
-img.home { 
+img.logo {
     width: 30px;
     height: 30px;
 
 }
 
 /* 居中 */
-#inCenter {
+.inCenter {
     text-align: center;
 }
 
