@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+div{
+    border: 1px solid greenyellow;
+}
+
+.tri_grid{
+    display:grid;
+    grid-template-columns: 120px 120px 120px;
+    margin: 0 auto;
+}
+
 body {
     background-color: #3a3d40;
 }
@@ -21,7 +31,6 @@ p {
     color: #cbcbcb;
     font-family:宋体, PingFang SC, HarmonyOS_Medium, Helvetica Neue, Microsoft YaHei, sans-serif;
     font-size: 15px;
-    border: 1px solid #00FF00;
 }
 
 a {
@@ -86,7 +95,7 @@ img.logo {
 }
 
 /* 居中 */
-.inCenter {
+.TextinCenter {
     text-align: center;
 }
 
