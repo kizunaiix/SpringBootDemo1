@@ -15,7 +15,10 @@ function popAlert2(){
 //     window.open("");
 // }
 
-function name() {
-    x=document.getElementById("AlertButton")        // 找到元素
-    alert("这是我大哥");
+function changeImg() {
+    elements= document.getElementsByClassName("changableImg");
+    for(i=0;i<elements.length;i++){
+        elements[i].src = "../static/img/runningChicken.gif";
+    }
+    
 }
