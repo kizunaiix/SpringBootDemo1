@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-div{
+div.showborder{
     border: 1px solid greenyellow;
 }
 
 .tri_grid{
     display:grid;
-    grid-template-columns: 120px 120px 120px;
+    grid-template-columns:auto auto auto;
     margin: 0 auto;
 }
 
@@ -98,7 +98,9 @@ img.logo {
 .TextinCenter {
     text-align: center;
 }
-
+.inCenter {
+    margin:0 auto;
+}
 
 /* 下面是自己写的元素
 -------------------------------------------------------------------------------------------- */
