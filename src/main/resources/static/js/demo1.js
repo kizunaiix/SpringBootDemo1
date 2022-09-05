@@ -14,3 +14,4 @@ function popAlert2(){
 //     x=document.getElementsByClassName("home")
 //     window.open("");
 // }
+

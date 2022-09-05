@@ -87,15 +87,15 @@ button.aqua {
 /* 下面是一些class和id
 ------------------------------------------------------------------------------------------- */
 
-/* 这个类的图片点击能返回主页 ，所以是个小logo */
-img.logo {
+/* 这个类的图片点击能返回主页 ，所以是个小icon */
+img.icon {
     width: 30px;
     height: 30px;
 
 }
 
 /* 居中 */
-.TextinCenter {
+.TextInCenter {
     text-align: center;
 }
 .inCenter {
