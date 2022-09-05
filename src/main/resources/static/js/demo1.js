@@ -15,3 +15,6 @@ function popAlert2(){
 //     window.open("");
 // }
 
+function name() {
+    
+}
