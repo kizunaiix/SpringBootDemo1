@@ -16,5 +16,6 @@ function popAlert2(){
 // }
 
 function name() {
-    
+    x=document.getElementById("AlertButton")        // 找到元素
+    alert("这是我大哥");
 }
