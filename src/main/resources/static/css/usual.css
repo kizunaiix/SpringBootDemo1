@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+div.chickenBackground {
+    background: url(../img/runningChicken.gif) no-repeat;
+}
+
 div.showborder {
     border: 1px solid greenyellow;
 }
@@ -14,8 +18,6 @@ div.showborder {
 
 body {
     background-color: #3a3d40;
-    background: url(../img/runningChicken.gif);  /**试一下对div用这个*/
-
 }
 
 h1 {

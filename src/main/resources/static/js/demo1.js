@@ -1,11 +1,11 @@
 
-function popAlert1(){
-    x=document.getElementById("AlertButton")        // 找到元素
+function popAlert1() {
+    x = document.getElementById("AlertButton")        // 找到元素
     alert("大哥问你话呢，看到我了没？");
 }
 
-function popAlert2(){
-    x=document.getElementById("AlertButton")        // 找到元素
+function popAlert2() {
+    x = document.getElementById("AlertButton")        // 找到元素
     alert("这是我大哥");
 }
 
@@ -23,11 +23,11 @@ function popAlert2(){
 // }
 
 function changeImg2RunningChicken() {
-    element= document.getElementById("changeable1");
-    element= document.getElementById("changeable2");
-    element= document.getElementById("changeable3");
-    element= document.getElementById("changeable4");
+    element = document.getElementById("changeable1");
+    element = document.getElementById("changeable2");
+    element = document.getElementById("changeable3");
+    element = document.getElementById("changeable4");
     element.src = "../static/img/runningChicken.gif";
 
-   //这里能不能不写四个函数来实现：“点哪个图片就只有那个图片会变化”呢？
+    //这里能不能不写四个函数来实现：“点哪个图片就只有那个图片会变化”呢？
 }
