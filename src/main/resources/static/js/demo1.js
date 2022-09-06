@@ -31,3 +31,10 @@ function changeImg2RunningChicken() {
 
     //这里能不能不写四个函数来实现：“点哪个图片就只有那个图片会变化”呢？
 }
+
+function myf() {
+    xx = {sites:[{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }]};
+    // var obj = JSON.parse('{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }');
+    var obj = JSON.parse(xx);
+    document.getElementById("demo").innerHTML = xx.sites;  //parse()如何解析大的JSON？？？
+}
