@@ -14,7 +14,7 @@ div.showborder {
 
 body {
     background-color: #3a3d40;
-    background: url(../img/runningChicken.gif);
+    background: url(../img/runningChicken.gif);  /**试一下对div用这个*/
 
 }
 
