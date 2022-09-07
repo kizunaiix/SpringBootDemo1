@@ -22,25 +22,25 @@ function popAlert2() {
 //     } 
 // }
 
-function changeImg2RunningChicken() {
-    element = document.getElementById("changeable1");
-    element = document.getElementById("changeable2");
-    element = document.getElementById("changeable3");
-    element.src = "img/runningChicken.gif";
-
-    //这里能不能不写四个函数来实现：“点哪个图片就只有那个图片会变化”呢？
-}
+function changeImg2RunningChicken(thisElement) {
+    element = document.getElementById(thisElement.id);
+        if (element.getAttribute("src") == "img/saber.jpg") {
+            element.src = "img/runningChicken.gif";
+        } else {
+            element.src = "img/saber.jpg";
+        }
+    }
 
 function myf() {
-    xx = {sites:[{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }]};
+    xx = { sites: [{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }] };
     // var obj = JSON.parse('{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }');
     var obj = JSON.parse(xx);
     document.getElementById("demo").innerHTML = xx.sites;  //parse()如何解析大的JSON？？？
 }
 
-function changeHTML_way1(){
+function changeHTML_way1() {
     x = document.getElementsByClassName("changeablewords");
-    x[0].innerHTML = "点了还不如不点。";
+    x[0].innerHTML = "其实点了还不如不点。";
 }
 
 function changeHTML_way2() {
