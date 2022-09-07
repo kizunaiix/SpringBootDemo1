@@ -26,7 +26,7 @@ function changeImg2RunningChicken() {
     element = document.getElementById("changeable1");
     element = document.getElementById("changeable2");
     element = document.getElementById("changeable3");
-    element.src = "../static/img/runningChicken.gif";
+    element.src = "img/runningChicken.gif";
 
     //这里能不能不写四个函数来实现：“点哪个图片就只有那个图片会变化”呢？
 }
