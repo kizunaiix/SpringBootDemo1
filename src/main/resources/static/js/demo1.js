@@ -37,3 +37,13 @@ function myf() {
     var obj = JSON.parse(xx);
     document.getElementById("demo").innerHTML = xx.sites;  //parse()如何解析大的JSON？？？
 }
+
+function changeHTML_way1(){
+    x = document.getElementsByClassName("changeablewords");
+    x[0].innerHTML = "点了还不如不点。";
+}
+
+function changeHTML_way2() {
+    x = document.getElementsByClassName("changeablewords");
+    x[0].innerHTML = "想偷东西是吧？";
+}
