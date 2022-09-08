@@ -47,3 +47,8 @@ function changeHTML_way2() {
     x = document.getElementsByClassName("changeablewords");
     x[0].innerHTML = "想偷东西是吧？";
 }
+
+function showTime(){
+    element = document.getElementById("timeGetter");
+    element.innerHTML = new Date().toString();
+}
