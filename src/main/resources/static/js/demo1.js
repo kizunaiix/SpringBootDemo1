@@ -24,12 +24,12 @@ function popAlert2() {
 
 function changeImg2RunningChicken(thisElement) {
     element = document.getElementById(thisElement.id);
-        if (element.getAttribute("src") == "img/saber.jpg") {
-            element.src = "img/runningChicken.gif";
-        } else {
-            element.src = "img/saber.jpg";
-        }
+    if (element.getAttribute("src") == "img/saber.jpg") {
+        element.src = "img/runningChicken.gif";
+    } else {
+        element.src = "img/saber.jpg";
     }
+}
 
 function myf() {
     xx = { sites: [{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }] };
@@ -48,7 +48,8 @@ function changeHTML_way2() {
     x[0].innerHTML = "想偷东西是吧？";
 }
 
-function showTime(){
+function showTime() {
     element = document.getElementById("timeGetter");
-    element.innerHTML = new Date().toString();
-}
+    element.innerHTML = new Date().toString(); 
+    setInterval("showTime()", "1000");
+} 
