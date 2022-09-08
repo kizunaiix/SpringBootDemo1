@@ -1,4 +1,9 @@
 
+setInterval("showTime()", "1000");
+
+
+
+
 function popAlert1() {
     x = document.getElementById("AlertButton")        // 找到元素
     alert("大哥问你话呢，看到我了没？");
@@ -50,6 +55,5 @@ function changeHTML_way2() {
 
 function showTime() {
     element = document.getElementById("timeGetter");
-    element.innerHTML = new Date().toString(); 
-    setInterval("showTime()", "1000");
+    element.innerHTML = new Date().toString();
 } 
