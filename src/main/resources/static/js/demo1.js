@@ -1,4 +1,4 @@
-
+/**打开页面就显示实时时间*/
 setInterval("showTime()", "1000");
 
 
@@ -14,19 +14,7 @@ function popAlert2() {
     alert("这是我大哥");
 }
 
-/* 返回主页 玩不明白 已废弃改用<a>了 */
-// function back2home(){
-//     x=document.getElementsByClassName("home")
-//     window.open("");
-// }
-
-// function changeImg2RunningChicken() {
-//     elements= document.getElementsByClassName("changableImg");
-//     for(i=0;i<elements.length;i++){
-//         elements[i].src = "../static/img/runningChicken.gif";
-//     } 
-// }
-
+/**实现点击saber变chicken，点击chicken变saber*/
 function changeImg2RunningChicken(thisElement) {
     if (thisElement.getAttribute("src") == "img/saber.jpg") {
         thisElement.src = "img/runningChicken.gif";
@@ -35,12 +23,16 @@ function changeImg2RunningChicken(thisElement) {
     }
 }
 
+
+/*
 function myf() {
     xx = { sites: [{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }] };
     // var obj = JSON.parse('{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }');
     var obj = JSON.parse(xx);
     document.getElementById("demo").innerHTML = xx.sites;  //parse()如何解析大的JSON？？？
 }
+*/
+
 
 function changeHTML_way1() {
     x = document.getElementsByClassName("changeablewords");
