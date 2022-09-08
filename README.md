@@ -15,4 +15,5 @@
 5. - [ ] 嗯学js
 6. - [ ] 学习iframe
 7. - [ ] 学习<"svg">
-8. - [ ] 看一下python能不能对字典用aaa.bbb
+8. - [x] 看一下python能不能对字典用aaa.key  -->不能，自能是aaa["key"]
+9. - [ ] java的@注解到底干了什么？
