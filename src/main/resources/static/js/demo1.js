@@ -28,11 +28,10 @@ function popAlert2() {
 // }
 
 function changeImg2RunningChicken(thisElement) {
-    element = document.getElementById(thisElement.id);
-    if (element.getAttribute("src") == "img/saber.jpg") {
-        element.src = "img/runningChicken.gif";
+    if (thisElement.getAttribute("src") == "img/saber.jpg") {
+        thisElement.src = "img/runningChicken.gif";
     } else {
-        element.src = "img/saber.jpg";
+        thisElement.src = "img/saber.jpg";
     }
 }
 
