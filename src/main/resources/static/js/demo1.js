@@ -24,14 +24,13 @@ function changeImg2RunningChicken(thisElement) {
 }
 
 
-/*
+
 function myf() {
-    xx = { sites: [{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }] };
-    // var obj = JSON.parse('{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }');
-    var obj = JSON.parse(xx);
-    document.getElementById("demo").innerHTML = xx.sites;  //parse()如何解析大的JSON？？？
+    JSONdata = '{ "20": [{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }] }';
+    var obj = JSON.parse(JSONdata);
+    document.getElementById("demo").innerHTML = obj[20][1]["alexa"]; 
 }
-*/
+
 
 
 function changeHTML_way1() {
