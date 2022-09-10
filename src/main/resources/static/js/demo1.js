@@ -45,5 +45,5 @@ function changeHTML_way2() {
 
 function showTime() {
     element = document.getElementById("timeGetter");
-    element.innerHTML = new Date().toString();
+    element.innerHTML = new Date();
 } 
