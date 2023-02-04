@@ -1,5 +1,5 @@
 /**打开页面就显示实时时间*/
-setInterval("showTime()", "1000");
+// setInterval("showTime()", "1000");
 
 
 
@@ -28,7 +28,7 @@ function changeImg2RunningChicken(thisElement) {
 function myf() {
     JSONdata = '{ "20": [{ "name": "runoob" }, { "alexa": 10000 }, { "site": "www.runoob.com" }] }';
     var obj = JSON.parse(JSONdata);
-    document.getElementById("demo").innerHTML = obj[20][1]["alexa"]; 
+    document.getElementById("demo").innerHTML = obj[20][0]["name"]; 
 }
 
 
@@ -47,3 +47,15 @@ function showTime() {
     element = document.getElementById("timeGetter");
     element.innerHTML = new Date();
 } 
+
+/*离开页面的时候改变title*/
+function changeTitle1() {
+    document.title = "歪？zaima？";
+}
+
+/*回到页面的时候再改变title*/
+function changeTitle2() {
+    document.title = "你回来辣！";
+    setTimeout(changeTitle1(), 3000);
+    document.title = "jsTest";
+}

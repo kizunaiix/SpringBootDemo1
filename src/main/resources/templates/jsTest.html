@@ -9,12 +9,9 @@
 
     <link rel="stylesheet" href="css/usual.css">
     <script src="js/demo1.js"></script>
-
-    <link rel="stylesheet" href="../static/css/usual.css">
-    <script src="../static/js/demo1.js"></script>
 </head>
 
-<body onload="showTime()">
+<body onload="showTime()" onpagehide="changeTitle1()" onpageshow="changeTitle2()">
     <div class="header">
         <h1><a href="/"><img class="icon" src="img/saber.jpg" alt="saber"></a>学习一下JavaScript</h1>
     </div>
