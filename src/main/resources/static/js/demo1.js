@@ -1,3 +1,5 @@
+/*获取网页原标题*/
+docTitle = document.title;
 /**打开页面就显示实时时间*/
 setInterval("showTime()", "1000");
 
@@ -54,6 +56,6 @@ document.addEventListener("visibilitychange",() => {
         document.title = "歪？zaima？";
     }else{
         document.title = "你回来辣！";
-        setTimeout("document.title = 'jsTest';", 1000);
+        setTimeout("document.title = docTitle;", 1000);
     }
 });
