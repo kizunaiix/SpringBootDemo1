@@ -1,5 +1,5 @@
 /**打开页面就显示实时时间*/
-// setInterval("showTime()", "1000");
+setInterval("showTime()", "1000");
 
 
 
@@ -48,14 +48,12 @@ function showTime() {
     element.innerHTML = new Date();
 } 
 
-/*离开页面的时候改变title*/
-function changeTitle1() {
-    document.title = "歪？zaima？";
-}
-
-/*回到页面的时候再改变title*/
-function changeTitle2() {
-    document.title = "你回来辣！";
-    setTimeout(changeTitle1(), 3000);
-    document.title = "jsTest";
-}
+/*离开页面的时候改变title,回到页面的时候再改变title*/
+document.addEventListener("visibilitychange",() => {
+    if (document.visibilityState === "hidden"){
+        document.title = "歪？zaima？";
+    }else{
+        document.title = "你回来辣！";
+        setTimeout("document.title = 'jsTest';", 1000);
+    }
+});
