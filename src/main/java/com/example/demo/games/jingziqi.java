@@ -50,12 +50,12 @@ public class jingziqi {
             case "0" -> third_row = replace_char(third_row, "X", 2);
             case "1" -> third_row = replace_char(third_row, "X", 6);
             case "2" -> third_row = replace_char(third_row, "X", 10);
-            case "3" -> third_row = replace_char(second_row, "X", 2);
-            case "4" -> third_row = replace_char(second_row, "X", 6);
-            case "5" -> third_row = replace_char(second_row, "X", 10);
-            case "6" -> third_row = replace_char(first_row, "X", 2);
-            case "7" -> third_row = replace_char(first_row, "X", 6);
-            case "8" -> third_row = replace_char(first_row, "X", 10);
+            case "3" -> second_row = replace_char(second_row, "X", 2);
+            case "4" -> second_row = replace_char(second_row, "X", 6);
+            case "5" -> second_row = replace_char(second_row, "X", 10);
+            case "6" -> first_row = replace_char(first_row, "X", 2);
+            case "7" -> first_row = replace_char(first_row, "X", 6);
+            case "8" -> first_row = replace_char(first_row, "X", 10);
             default -> System.out.println("wrong input!!!");
         }
     }
