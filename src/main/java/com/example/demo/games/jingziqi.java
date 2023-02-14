@@ -15,6 +15,20 @@ public class jingziqi {
         END = false;
     }
 
+    public static void start_game(){
+        jingziqi j1 = new jingziqi();
+        /*下面开始游戏*/
+        j1.show_rule();
+        j1.draw_game();
+
+        while (!j1.END){
+            j1.draw_row(j1.ask_new_step());
+            j1.draw_game();
+            j1.judge_game();
+        }
+        System.out.println("bang!");
+    }
+
     public void show_rule(){
         System.out.println("the rule is:");
         System.out.println("| 6 | 7 | 8 |");
