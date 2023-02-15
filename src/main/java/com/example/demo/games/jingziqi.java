@@ -1,9 +1,10 @@
 package com.example.demo.games;
 
+
 import java.util.Scanner;
 
 public class jingziqi {
-    public boolean END = false;
+    public boolean END;
     private String first_row;
     private String second_row;
     private String third_row;
@@ -15,16 +16,15 @@ public class jingziqi {
         END = false;
     }
 
-    public static void start_game(){
-        jingziqi j1 = new jingziqi();
+    public void start_game(){
         /*下面开始游戏*/
-        j1.show_rule();
-        j1.draw_game();
+        show_rule();
+        draw_game();
 
-        while (!j1.END){
-            j1.draw_row(j1.ask_new_step());
-            j1.draw_game();
-            j1.judge_game();
+        while (!END){
+            draw_row(ask_new_step());
+            draw_game();
+            judge_game();
         }
         System.out.println("bang!");
     }
