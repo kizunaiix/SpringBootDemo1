@@ -7,6 +7,7 @@ public class Jingziqi_start {
         ttt();
     }
 
+    /*TODO:不理解这个Test的问题在哪，Test应该怎么用呢？*/
     @Test
     private static void ttt() {
         jingziqi j1 = new jingziqi();
