@@ -3,17 +3,19 @@ package com.example.demo.games;
 
 import java.util.Scanner;
 
-public class jingziqi {
+public class TicTacToe {
     public boolean END;
     private String first_row;
     private String second_row;
     private String third_row;
+    private String new_step;
 
-    public jingziqi(){
+    public TicTacToe(){
         first_row  = "|   |   |   |";
         second_row = "|   |   |   |";
         third_row  = "|   |   |   |";
         END = false;
+        new_step = "";
     }
 
     public void start_game(){
@@ -22,7 +24,8 @@ public class jingziqi {
         draw_game();
 
         while (!END){
-            draw_row(ask_new_step());
+            ask_new_step();
+            draw_row();
             draw_game();
             judge_game();
         }
@@ -59,8 +62,8 @@ public class jingziqi {
         System.out.println("-------------");
     }
 
-    public void draw_row(String input_loc){
-        switch (input_loc) {
+    public void draw_row(){
+        switch (new_step) {
             case "0" -> third_row = replace_char(third_row, "X", 2);
             case "1" -> third_row = replace_char(third_row, "X", 6);
             case "2" -> third_row = replace_char(third_row, "X", 10);
@@ -77,12 +80,12 @@ public class jingziqi {
     /**
      * 询问新步骤下在哪里
      */
-    public String ask_new_step(){
+    public void ask_new_step(){
         Scanner input = new Scanner(System.in);
         System.out.print("give me a new location: ");
         String myString = input.next();
         System.out.println("you put it at:" + myString);
-        return myString;
+        new_step = myString;
     }
 
     /**
@@ -98,7 +101,7 @@ public class jingziqi {
         if (third_row.equals("| X | X | X |")){
             END = true;
         }
-        if (first_row.equals(second_row) && second_row.equals(third_row)){
+        if (first_row.equals(second_row) && second_row.equals(third_row)){ //这里有bug，逻辑就不对
             END = true;
         }
         if (first_row.equals("| X |   |   |") && second_row.equals("|   | X |   |") && third_row.equals("|   |   | X |")){
