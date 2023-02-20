@@ -10,52 +10,59 @@ public class TicTacToe {
     private String second_row;
     private String third_row;
     private String new_step;
-    private ArrayList<int[]> gameProcedure = new ArrayList<>();
+    private ArrayList<Piece> gameProcedure = new ArrayList<>();
 
     private class Piece {
-        public int row;
-        public int column;
-//        private String putter;
+        int row;
+        int column;
+//      String putter;
 
         public Piece(String input) {
             switch (input) {
                 case "0" -> {
-                    row = 0;
-                    column = 0;
+                    this.row = 0;
+                    this.column = 0;
                 }
                 case "1" -> {
-                    row = 0;
-                    column = 1;
+                    this.row = 0;
+                    this.column = 1;
                 }
                 case "2" -> {
-                    row = 0;
-                    column = 2;
+                    this.row = 0;
+                    this.column = 2;
                 }
                 case "3" -> {
-                    row = 1;
-                    column = 0;
+                    this.row = 1;
+                    this.column = 0;
                 }
                 case "4" -> {
-                    row = 1;
-                    column = 1;
+                    this.row = 1;
+                    this.column = 1;
                 }
                 case "5" -> {
-                    row = 1;
-                    column = 2;
+                    this.row = 1;
+                    this.column = 2;
                 }
                 case "6" -> {
-                    row = 2;
-                    column = 0;
+                    this.row = 2;
+                    this.column = 0;
                 }
                 case "7" -> {
-                    row = 2;
-                    column = 1;
+                    this.row = 2;
+                    this.column = 1;
                 }
                 case "8" -> {
-                    row = 2;
-                    column = 2;
+                    this.row = 2;
+                    this.column = 2;
                 }
             }
+        }
+
+        @Override
+        public boolean equals(Object Obj){
+            if (!(Obj instanceof Piece)){
+                return false;
+            } else return this.row == ((Piece) Obj).row && this.column == ((Piece) Obj).column;
         }
     }
 
@@ -65,7 +72,7 @@ public class TicTacToe {
         third_row = "|   |   |   |";
         END = false;
         new_step = "";
-        gameProcedure = null;
+
     }
 
     public void start_game() {
@@ -133,7 +140,7 @@ public class TicTacToe {
      */
     private void refresh_gameProcedure() {
         Piece newPiece = new Piece(new_step);
-        gameProcedure.add(new int[]{newPiece.row, newPiece.column});
+        gameProcedure.add(newPiece);
     }
 
     /**
@@ -151,8 +158,21 @@ public class TicTacToe {
      * 判断游戏是否结束
      */
     private void judge_game() {
-        int[] a1 = {0, 0};
-        if (gameProcedure.contains(a1)) {
+        if (gameProcedure.contains(new Piece("0"))&&gameProcedure.contains(new Piece("1"))&&gameProcedure.contains(new Piece("2"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("3"))&&gameProcedure.contains(new Piece("4"))&&gameProcedure.contains(new Piece("5"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("6"))&&gameProcedure.contains(new Piece("7"))&&gameProcedure.contains(new Piece("8"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("0"))&&gameProcedure.contains(new Piece("3"))&&gameProcedure.contains(new Piece("6"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("1"))&&gameProcedure.contains(new Piece("4"))&&gameProcedure.contains(new Piece("7"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("2"))&&gameProcedure.contains(new Piece("5"))&&gameProcedure.contains(new Piece("8"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("0"))&&gameProcedure.contains(new Piece("4"))&&gameProcedure.contains(new Piece("8"))) {
+            END = true;
+        } else if (gameProcedure.contains(new Piece("2"))&&gameProcedure.contains(new Piece("4"))&&gameProcedure.contains(new Piece("6"))) {
             END = true;
         }
     }
