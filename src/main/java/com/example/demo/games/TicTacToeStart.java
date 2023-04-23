@@ -1,8 +1,6 @@
 package com.example.demo.games;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-
 public class TicTacToeStart {
     public static void main(String[] args) {
         ttt();
@@ -10,7 +8,7 @@ public class TicTacToeStart {
     }
 
 
-    /*TODO:不理解这个Test的问题在哪，Test应该怎么用呢？*/
+    /*TODO:不理解这个Test的问题在哪，Test应该怎么用呢?*/
     @Test
     private static void ttt() {
         TicTacToe j1 = new TicTacToe();
